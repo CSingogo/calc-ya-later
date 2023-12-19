@@ -23,6 +23,59 @@ body{
     font-family: 'JetBrains Mono', monospace;
 }
 
+.number{
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #296561;
+}
+
+.special{
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #1E90FF;
+    position: relative;
+    right:100px;
+    top:40px;
+}
+
+.basic-operator{
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #FFA836;
+    position: relative;
+    right: 100px;
+    top:40px;
+}
+
+#multiply{
+    position: relative;
+    top:65px;
+    right: 130px;
+} 
+
+#minus{
+    position: relative;
+    top:90px;
+    right: 160px; 
+}
+
+#plus{
+    position: relative;
+    top:120px;
+    right: 190px; 
+}
+
+#equals{
+    position: relative;
+    top:150px;
+    right: 220px; 
+}
+
+.keys{
+    transform: scale(4.0);
+    border-radius: 10px;
+    position: relative;
+    bottom: 100px;
+}
+
+
 .container{
     width: 600px;
     height: 700px;
