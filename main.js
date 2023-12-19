@@ -1,17 +1,17 @@
 function add(x,y){
-       return x + y;
+       return Math.floor(x + y);
 }
 
 function subtract(x,y){
-    return x - y;
+    return Math.floor(x - y);
 }
 
 function multiply(x,y){
-   return x * y;
+   return Math.floor(x * y);
 }
 
 function divide(x,y){
-   return x / y;
+   return Math.floor(x / y);
 }
 
 // variables
@@ -27,7 +27,7 @@ function operate(num1,operator,num2){
       }
       else if(operator === '-')
          {
-            document.getElementById('dispaly').innerText = subtract(num1,num2);
+            document.getElementById('display').innerText = subtract(num1,num2);
          }
            else if(operator === '*')
             {
@@ -57,7 +57,7 @@ function appendToDisplay(value) {
                 num1 = parsed;
             }
       } else {
-        operator = parsed;
+        operator = value;
       }
 
 
@@ -70,6 +70,16 @@ function appendToDisplay(value) {
     updateDisplay();
 }
 
+function appendToDisplayDot(){
+    value = '.';
+    currentInput += value;   
+}
+
+function appendToDisplayNeg(){
+    
+    currentInput *= -1;   
+}
+
 function clearDisplay() {
     currentInput = '0';
     updateDisplay();
@@ -77,9 +87,11 @@ function clearDisplay() {
 }
 
 function calculateResult() {
-    // Implement your calculation logic here
-    // For example: currentInput = eval(currentInput);
-    updateDisplay();
+    if (operator === '/' && num2 === 0)
+      {
+        document.getElementById('display').innerText = 'Error!!';
+      }
+    operate(parseFloat(num1), operator, parseFloat(num2));
 }
 
 function updateDisplay() {

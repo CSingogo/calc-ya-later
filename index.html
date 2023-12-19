@@ -14,25 +14,25 @@
             <div class="text" id="display">0</div>
         </div>
         <div class="keys">
-            <button class="number" id="one">1</button>
-            <button class="number" id="two">2</button>
-            <button class="number" id="three">3</button>
-            <button class="number" id="four">4</button>
-            <button class="number" id="five">5</button>
-            <button class="number" id="six">6</button>
-            <button class="number" id="seven">7</button>
-            <button class="number" id="eight">8</button>
-            <button class="number" id="nine">9</button>
-            <button class="number" id="zero">0</button>
-            <button class="number" id="dot">.</button>
-            <button class="special" id="clear">AC</button>
-            <button class="special" id="posneg">-/+</button>
-            <button class="special" id="modulus">%</button>
-            <button class="basic-operator" id="divide">/</button>
-            <button class="basic-operator" id="multiply">*</button>
-            <button class="basic-operator" id="minus">-</button>
-            <button class="basic-operator" id="plus">+</button>
-            <button class="basic-operator" id="equals">=</button>
+            <button class="number" id="one" onclick="appendToDisplay('1')">1</button>
+            <button class="number" id="two" onclick="appendToDisplay('2')">2</button>
+            <button class="number" id="three" onclick="appendToDisplay('3')">3</button>
+            <button class="number" id="four" onclick="appendToDisplay('4')">4</button>
+            <button class="number" id="five" onclick="appendToDisplay('5')">5</button>
+            <button class="number" id="six" onclick="appendToDisplay('6')">6</button>
+            <button class="number" id="seven" onclick="appendToDisplay('7')">7</button>
+            <button class="number" id="eight" onclick="appendToDisplay('8')">8</button>
+            <button class="number" id="nine" onclick="appendToDisplay('9')">9</button>
+            <button class="number" id="zero" onclick="appendToDisplay('0')">0</button>
+            <button class="number" id="dot" onclick="appendToDisplayDot()">.</button>
+            <button class="special" id="clear" onclick="clearDisplay()">AC</button>
+            <button class="special" id="posneg" onclick="appendToDisplayNeg()">-/+</button>
+            <button class="special" id="modulus" onclick="appendToDisplay('%')">%</button>
+            <button class="basic-operator" id="divide" onclick="appendToDisplay('/')">/</button>
+            <button class="basic-operator" id="multiply" onclick="appendToDisplay('*')">*</button>
+            <button class="basic-operator" id="minus" onclick="appendToDisplay('-')">-</button>
+            <button class="basic-operator" id="plus" onclick="appendToDisplay('+')">+</button>
+            <button class="basic-operator" id="equals" onclick="calculateResult()">=</button>
 
         </div>
 
