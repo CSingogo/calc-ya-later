@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(243, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.display{
+    width: 580px;
+    height: 130px;
+    border: 10px solid black;
+    background-color: rgb(189, 185, 185);
+    text-align: right;
+    
+}
+
+.text{
+    position: relative;
+    bottom:15px;
+    font-size: 130px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.container{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(56, 53, 53);
+    padding:20px;
+    border-radius: 10px;
+    
+
+}

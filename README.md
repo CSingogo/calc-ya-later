@@ -1,1 +1,1 @@
-# calculator
+A basic online calculator app
